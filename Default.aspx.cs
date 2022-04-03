@@ -28,7 +28,7 @@ namespace Laboratorio8
                 ju1.Nombre = reader.ReadLine();
                 ju1.NombreEquipo = reader.ReadLine();
                 //agregar a lista
-                juga.Add(ju1);           
+                juga.Add(ju1);  
             }
 
             reader.Close();

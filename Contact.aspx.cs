@@ -81,7 +81,7 @@ namespace Laboratorio8
                 GridView1.DataSource = ingre3;
                 GridView1.DataBind();
 
-                var totalTemp = ingre3.Sum(x => x.Goles);
+               double totalTemp = ingre3.Sum(x => x.Goles);
                 for (int k = 0; k < ingre3.LongCount(); k++)
                 {
                     Label1.Text = (totalTemp / ingre.LongCount()).ToString();
