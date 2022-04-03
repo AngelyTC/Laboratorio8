@@ -10,7 +10,7 @@ namespace Laboratorio8
 {
     public partial class _Default : Page
     {
-       static List<jugadores> juga = new List<jugadores>();
+        List<jugadores> juga = new List<jugadores>();
        static List<ingresos> ingre = new List<ingresos>();
         //List<Ingresos1> ingre2 = new List<Ingresos1>();
 

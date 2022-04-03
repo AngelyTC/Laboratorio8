@@ -10,9 +10,9 @@ namespace Laboratorio8
 {
     public partial class Contact : Page
     {
-        static List<jugadores> juga = new List<jugadores>();
-        static List<ingresos> ingre = new List<ingresos>();
-       static List<datosJugador> ingre3 = new List<datosJugador>();
+        List<jugadores> juga = new List<jugadores>();
+       static  List<ingresos> ingre = new List<ingresos>();
+      static  List<datosJugador> ingre3 = new List<datosJugador>();
         protected void Page_Load(object sender, EventArgs e)
         {
           
