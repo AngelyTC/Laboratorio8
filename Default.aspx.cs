@@ -37,7 +37,7 @@ namespace Laboratorio8
         {
             Leer1();
             cmbLista.DataValueField = "NoJugador";
-            cmbLista.DataMember = "Nombre";
+            cmbLista.DataTextField = "Nombre";
 
             cmbLista.DataSource = juga;
             cmbLista.DataBind();
