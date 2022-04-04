@@ -10,7 +10,7 @@ namespace Laboratorio8
 {
     public partial class Contact : Page
     {
-        List<jugadores> juga = new List<jugadores>();
+      static  List<jugadores> juga = new List<jugadores>();
        static  List<ingresos> ingre = new List<ingresos>();
       static  List<datosJugador> ingre3 = new List<datosJugador>();
         protected void Page_Load(object sender, EventArgs e)
@@ -21,7 +21,7 @@ namespace Laboratorio8
         }
         private void Leerjugador()
         {
-            string fileName = Server.MapPath("~/jugadores1.txt");
+            string fileName = Server.MapPath("~/Archivos/jugadores1.txt");
 
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader reader = new StreamReader(stream);
@@ -40,7 +40,7 @@ namespace Laboratorio8
         }
         private void LeerIngreso()
         {
-            string fileName = Server.MapPath("~/Ingresos.txt");
+            string fileName = Server.MapPath("~/Archivos/Ingresos.txt");
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader reader = new StreamReader(stream);
 

@@ -15,6 +15,15 @@ namespace Laboratorio8
     {
 
         /// <summary>
+        /// Control ValidationSummary1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+
+        /// <summary>
         /// Control cmbLista.
         /// </summary>
         /// <remarks>
@@ -42,6 +51,15 @@ namespace Laboratorio8
         protected global::System.Web.UI.WebControls.TextBox txtEquipo;
 
         /// <summary>
+        /// Control RequiredFieldValidatorEquipo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorEquipo;
+
+        /// <summary>
         /// Control txtGoles.
         /// </summary>
         /// <remarks>
@@ -49,6 +67,24 @@ namespace Laboratorio8
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtGoles;
+
+        /// <summary>
+        /// Control RangeValidatorGoles.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorGoles;
+
+        /// <summary>
+        /// Control RequiredFieldValidatorGoles.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorGoles;
 
         /// <summary>
         /// Control btnGuardar.

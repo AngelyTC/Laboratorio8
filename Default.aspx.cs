@@ -10,13 +10,13 @@ namespace Laboratorio8
 {
     public partial class _Default : Page
     {
-        List<jugadores> juga = new List<jugadores>();
+       static List<jugadores> juga = new List<jugadores>();
        static List<ingresos> ingre = new List<ingresos>();
         //List<Ingresos1> ingre2 = new List<Ingresos1>();
 
         private void Leer1()
         {
-            string fileName = Server.MapPath("~/jugadores1.txt");
+            string fileName = Server.MapPath("~/Archivos/jugadores1.txt");
 
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader reader = new StreamReader(stream);
@@ -35,17 +35,22 @@ namespace Laboratorio8
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            Leer1();
-            cmbLista.DataValueField = "NoJugador";
-            cmbLista.DataTextField = "Nombre";
+            //Post back = veces en que la pagina se recarga menos la primera
+            //la primera vez que recarga la pagina no es postback
+            if (!IsPostBack)
+            {
+                Leer1();
+                cmbLista.DataValueField = "NoJugador";
+                cmbLista.DataTextField = "Nombre";
 
-            cmbLista.DataSource = juga;
-            cmbLista.DataBind();
+                cmbLista.DataSource = juga;
+                cmbLista.DataBind();
+            }         
         }
 
         private void Guardar1()
         {
-            string fileName = Server.MapPath("~/Ingresos.txt");
+            string fileName = Server.MapPath("~/Archivos/Ingresos.txt");
 
             FileStream stream = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter writer = new StreamWriter(stream);
